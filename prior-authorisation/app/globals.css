@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: black;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.headers {
+  color: #009E67;
+}
+
+.brandColor {
+  color: #009E67;
+}
+
+.secondaryInfo {
+  color: gray;
+}
+
+.neutralSVG {
+  opacity: 0.4;
+}
+
+.tag {
+  display: inline-block;
+  border: 0.1rem solid #009E67;
+  border-radius: 0.5rem;
+}
+
+.denied {
+  color: red;
+  display: inline-block;
+  border: 0.1rem solid #9e0d00;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+}
+
+.deniedSummary {
+  color: gray;
+}
